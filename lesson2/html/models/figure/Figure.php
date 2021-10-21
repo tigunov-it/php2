@@ -1,7 +1,7 @@
 <?php
 
 namespace models\figure;
-class Figure
+abstract class Figure
 {
     public $name;
 

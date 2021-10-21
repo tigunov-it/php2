@@ -7,16 +7,25 @@ use \models\Products as Products;
 use \models\Users as Users;
 use \models\Basket as Basket;
 use \models\Orders as Orders;
+use \engine\Db as Db;
 
-$product = new Products();
-$user1 = new Users();
-$cart = new Basket();
-$order = new Orders();
+$db = new Db();
+
+$product = new Products($db);
+$user1 = new Users($db);
+$cart = new Basket($db);
+$order = new Orders($db);
+
+echo $product->getOne(2);
+echo $cart->getOne(4);
+echo $product->getAll();
+echo $cart->getAll();
 
 var_dump($product);
 var_dump($user1);
 var_dump($cart);
 var_dump($order);
+
 
 echo "<br>";
 echo "<b>Прямоугольник</b>" . '<br>';
