@@ -3,15 +3,18 @@ namespace app\models;
 class Users extends Model
 {
     public $id;
-    public $login;
-    public $password;
+    public $name;
+    public $pass;
+    public $hash;
 
     protected $tableName = 'users';
 
-    public function __construct($login = null, $password = null)
+    public function __construct($name = null, $pass = null, $hash = null)
     {
-        $this->login = $login;
-        $this->password = $password;
+        $this->name = $name;
+        $this->pass = $pass;
+        $this->hash = $hash;
     }
+
 
 }

@@ -60,4 +60,8 @@ class Db
     {
         return $this->query($sql, $params)->rowCount();
     }
+
+    public function lastInsertId() {
+         return $this->getConnection()->lastInsertId();
+    }
 }

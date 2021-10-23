@@ -3,6 +3,7 @@ include "./engine/Autoload.php";
 
 spl_autoload_register([new Autoload(), 'my_autoloader']);
 
+use app\engine\Db as Db;
 use app\models\Products as Products;
 use app\models\Users as Users;
 use app\models\Basket as Basket;
@@ -10,13 +11,14 @@ use app\models\Orders as Orders;
 
 
 $product = new Products("Фара противотуманная", "Является дополнительным источником освещения", "900", "plug.jpg");
-$product->insert();
-var_dump($product);
-var_dump(get_class_methods($product));
+//$product->insert();
+//$product->delete(30);
 
-$user2 = new Users("Владимир", "777");
-var_dump($user2);
-var_dump(get_class_methods($user2));
+
+$user2 = new Users("Владимир", "777", '19720108286164135db632e5.71871079');
+//$user2->insert();
+//$user2->delete(12);
+
 
 //$user1 = new Users();
 //$cart = new Basket();
