@@ -2,7 +2,6 @@
 
 namespace app\engine;
 use app\traits\TSingletone;
-
 class Db
 {
     use TSingletone; // делаем класс Db синглтоном

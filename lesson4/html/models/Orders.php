@@ -8,5 +8,10 @@ class Orders extends Model
     public $price;
     public $count;
 
-    protected $tableName = 'orders';
+//    protected $tableName = 'orders';
+
+    public static function getTableName()
+    {
+        return 'orders';
+    }
 }

@@ -8,8 +8,12 @@ class Products extends Model
     public $description;
     public $price;
     public $photo;
-    protected $tableName = 'catalog';
+//    protected $tableName = 'catalog';
 
+    public static function getTableName()
+    {
+        return 'catalog';
+    }
 
     public function __construct($name = null, $description = null, $price = null, $photo = null)
     {

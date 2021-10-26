@@ -10,12 +10,29 @@ use app\models\Basket as Basket;
 use app\models\Orders as Orders;
 
 
+$controllerName = $_GET['c'] ?? 'product';
+$actionName = $_GET['a'] ?? null;
+
+$controllerClass = "app\\controllers\\" . ucfirst($controllerName) . "Controller";
+
+if (class_exists($controllerClass)) {
+    $controller = new $controllerClass;
+    $controller->runAction($actionName);
+} else {
+    Die('404');
+}
+
+
+
+
+
+
 $product = new Products("Фара противотуманная", "Является дополнительным источником освещения", "900", "plug.jpg");
 //$product->insert();
 //$product->delete(30);
 
 
-$user2 = new Users("Владимир", "777", '19720108286164135db632e5.71871079');
+//$user2 = new Users("Владимир", "777", '19720108286164135db632e5.71871079');
 //$user2->insert();
 //$user2->delete(12);
 

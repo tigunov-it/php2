@@ -8,5 +8,10 @@ class Basket extends Model
     public $price;
     public $count;
 
-    protected $tableName = 'basket';
+//    protected $tableName = 'basket';
+
+    public static function getTableName()
+    {
+        return 'basket';
+    }
 }
