@@ -1,5 +1,7 @@
 .idea
 db
+vendor
+compilation_cache
 mutagen
 .env
 docker-compose.yml
