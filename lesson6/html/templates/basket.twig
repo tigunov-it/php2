@@ -1,0 +1,14 @@
+<h2>Это корзина twig</h2>
+{% if basket %}
+    {% for item in basket %}
+        <div>
+            <h3><a href="/product/card/?id={{ item.id }}"> {{ item.name }} </a></h3>
+            <p> Цена: {{ item.price }} </p>
+            <button>Удалить</button>
+        </div>
+    {% endfor %}
+{% else %}
+    <h2>Корзина пуста</h2>
+{% endif %}
+
+
