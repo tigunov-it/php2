@@ -1,0 +1,1 @@
+{"version":1,"defects":{"app\\tests\\ShopTest::testAdd":3,"app\\tests\\ProductTests::testProduct":4,"ProductTests::testProduct":4,"app\\models\\ProductTests::testProduct":4},"times":{"app\\tests\\ShopTest::testAdd":0.002,"app\\tests\\ProductTests::testProduct":0.001,"ProductTests::testProduct":0.001,"app\\models\\ProductTests::testProduct":0.001}}

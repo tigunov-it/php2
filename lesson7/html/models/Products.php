@@ -2,7 +2,7 @@
 namespace app\models;
 class Products extends Model
 {
-    protected $id; // Ругается на id
+    protected $id; // Ругается на id почему?
     protected $name;
     protected $description;
     protected $price;
