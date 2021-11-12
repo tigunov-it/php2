@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: mariadb
--- Время создания: Ноя 08 2021 г., 02:10
+-- Время создания: Ноя 12 2021 г., 00:16
 -- Версия сервера: 10.5.12-MariaDB
 -- Версия PHP: 7.4.20
 
@@ -39,8 +39,6 @@ CREATE TABLE `basket` (
 --
 
 INSERT INTO `basket` (`id`, `user_id`, `item_id`, `session_id`) VALUES
-(56, 7, 3, 'to4pjpaslcdgjljpb6a1sclt00'),
-(57, NULL, 2, 'to4pjpaslcdgjljpb6a1sclt00'),
 (58, NULL, 21, 'to4pjpaslcdgjljpb6a1sclt00'),
 (59, NULL, 3, 'g6hhhave37sdumag42j611cjqv'),
 (60, NULL, 5, 'g6hhhave37sdumag42j611cjqv'),
@@ -52,8 +50,22 @@ INSERT INTO `basket` (`id`, `user_id`, `item_id`, `session_id`) VALUES
 (66, NULL, 2, 'ctngll7bgerdiacrip892k899q'),
 (71, NULL, 1, 'e9l9ipc9vlc9jonv1vj1b3n52j'),
 (72, NULL, 5, 'e9l9ipc9vlc9jonv1vj1b3n52j'),
-(74, NULL, 4, 'kemjm2pn5pbbfjl3tdns7rckfs'),
-(75, NULL, 5, 'kemjm2pn5pbbfjl3tdns7rckfs');
+(76, NULL, 4, 'kemjm2pn5pbbfjl3tdns7rckfs'),
+(77, NULL, 1, 'ksqjpevi371tp4384lc99prbcj'),
+(78, NULL, 3, 'ksqjpevi371tp4384lc99prbcj'),
+(80, NULL, 5, 'icrh9dun35lkjauf1180dg2qo8'),
+(81, NULL, 1, 'icrh9dun35lkjauf1180dg2qo8'),
+(91, NULL, 1, 'kdfi0vn90ink2t6gnl9drphg5a'),
+(92, NULL, 5, 'kdfi0vn90ink2t6gnl9drphg5a'),
+(93, NULL, 2, 'e3fguuj1g56knn88g1abfukuns'),
+(94, NULL, 4, 'e3fguuj1g56knn88g1abfukuns'),
+(95, NULL, 21, 'e3fguuj1g56knn88g1abfukuns'),
+(100, NULL, 5, 'pok3f9fachggas93ints6prgjo'),
+(101, NULL, 21, 'pok3f9fachggas93ints6prgjo'),
+(102, NULL, 3, 'pok3f9fachggas93ints6prgjo'),
+(103, NULL, 4, 'pok3f9fachggas93ints6prgjo'),
+(108, NULL, 1, '0db26c1sp009dl2b2ig0bveigm'),
+(109, NULL, 3, '0db26c1sp009dl2b2ig0bveigm');
 
 -- --------------------------------------------------------
 
@@ -94,13 +106,6 @@ CREATE TABLE `orders` (
   `session_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Дамп данных таблицы `orders`
---
-
-INSERT INTO `orders` (`id`, `session_id`, `email`) VALUES
-(1, 'kemjm2pn5pbbfjl3tdns7rckfs', '1@23.ru');
 
 -- --------------------------------------------------------
 
@@ -192,7 +197,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `basket`
 --
 ALTER TABLE `basket`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
 
 --
 -- AUTO_INCREMENT для таблицы `catalog`
@@ -204,7 +209,7 @@ ALTER TABLE `catalog`
 -- AUTO_INCREMENT для таблицы `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
